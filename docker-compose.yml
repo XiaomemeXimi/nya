@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  userge:
+      build:
+        context: https://github.com/XiaomemeXimi/nya.git#master
+
+      restart: on-failure
+      env_file:
+        - config.py
